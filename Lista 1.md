@@ -36,5 +36,23 @@ elif wyb == '2':
 
     print(f"Objetosc prostopadłościanu {ob}")
     print(f"Pole powierzchni prostopadłościanu {pp}")
+
+elif wyb == '3':
+    print("Wybrales Stożek")
+    print("Podaj r")
+    r = input()
+    r = int(r)
+    print("Podaj h")
+    h = input()
+    h = int(h)
+    print("Podaj l")
+    l = input()
+    l = int(l)
+
+    ob = (3.14 * (r * r) * h) / 3
+    pp = 3.14 * r * (r + l)
+
+    print(f"Objetosc stożka {ob}")
+    print(f"Pole powierzchni stożka {pp}")
 ```
 # Zadanie 2
