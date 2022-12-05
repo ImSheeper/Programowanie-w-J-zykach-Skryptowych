@@ -133,7 +133,7 @@ elif wyb == '3':
 elif wyb == '4':
     print("Twoja srednia ocen z programowania ", sumaProg / prog)
 ```
-# Zadanie 3
+# Zadanie 3 - Wersja rysująca tylko gwiazdki
 ```python
 print("Podaj ilosc gwiazdek w podstawie")
 a = input()
