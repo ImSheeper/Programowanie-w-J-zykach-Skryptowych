@@ -162,7 +162,7 @@ for i in range(a * 2):
 
     print(" ")
 ```
-# Zadanie 3
+# Zadanie 4
 ```python
 print("Podaj ciąg znaków")
 tekst = input()
