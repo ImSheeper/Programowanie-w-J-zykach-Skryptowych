@@ -1,5 +1,5 @@
 # Zadanie 1
-```py
+```python
 print("Wybierz bryłę:")
 print("1.Kula")
 print("2.Prostopadłościan")
@@ -134,3 +134,24 @@ elif wyb == '4':
     print("Twoja srednia ocen z programowania ", sumaProg / prog)
 ```
 # Zadanie 3
+```python
+print("Podaj ilosc gwiazdek w podstawie")
+a = input()
+a = int(a)
+#print("Podaj tekst")
+#tekst = input()
+
+for i in range(a):
+
+    for j in range (a * 2 - 1):
+        if i + j == a - 1 or j - i == a - 1 or i == a - 1:
+            print("*", end="")
+        #elif i == a - 2 and j == a - 1:
+            #print(tekst, end="");
+        else:
+            print(" ", end="")
+
+        #print(i, j, end="`")
+
+    print(" ")
+```
