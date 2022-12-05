@@ -162,3 +162,48 @@ for i in range(a * 2):
 
     print(" ")
 ```
+# Zadanie 3
+```python
+print("Podaj ciąg znaków")
+tekst = input()
+print("Podaj znak do pominięcia")
+znak = input()
+
+bezSpacji = 0
+bezSpacji = int(bezSpacji)
+
+pominiecie = 0
+pominiecie = int(pominiecie)
+
+dlugosc = len(tekst)
+
+for i in range(dlugosc):
+    if tekst[i] != " ":
+        bezSpacji += 1
+    if tekst[i] != znak:
+        pominiecie += 1
+
+print("ilość liter: ", dlugosc)
+print("ilość z liter pominięciem spacji: ", bezSpacji)
+print("ilość liter z pominięciem znaku: ", pominiecie)
+print("")
+
+print("Całe zdanie: ", tekst)
+print("")
+
+print("Zdanie z pominięciem spacji: ")
+for i in range(dlugosc):
+    if tekst[i] != " ":
+        print(tekst[i], end="")
+    else:
+        print("")
+print("")
+print("")
+
+print("Zdanie z pominięciem znaku: ")
+for i in range(dlugosc):
+    if tekst[i] != znak:
+        print(tekst[i], end="")
+    else:
+        print(tekst[i])
+```
