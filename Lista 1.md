@@ -207,3 +207,133 @@ for i in range(dlugosc):
     else:
         print(tekst[i])
 ```
+# Zadanie 2 - Modyfikacja
+```python
+sumaMatma = 0
+sumaAlgo = 0
+sumaProg = 0
+przedmioty = 0
+matma = 0
+algo = 0
+prog = 0
+
+
+while True:
+    print("Z czego chcesz dodać oceny?")
+    print("1.Matematyka")
+    print("2.Algorytmy")
+    print("3.Programowanie")
+    print("4.Policz średnią")
+    wyb = input()
+
+    if wyb == '1':
+        print("Podaj oceny z matematyki")
+        print("Wpisz 0, aby przestać wpisywać oceny")
+        while True:
+            print("Podaj ocenę")
+            a = input()
+            a = int(a)
+
+            if a == 0:
+                break
+
+            if a >= 2 and a <= 5:
+                sumaMatma += a
+                przedmioty += 1
+                matma += 1
+            else:
+                print("Podałeś złą liczbę!")
+
+    if wyb == '2':
+        print("Podaj oceny z algorytmów")
+        print("Wpisz 0, aby przestać wpisywać oceny")
+        while True:
+            print("Podaj ocenę")
+            a = input()
+            a = int(a)
+
+            if a == 0:
+                break
+
+            if a >= 2 and a <= 5:
+                sumaAlgo += a
+                przedmioty += 1
+                algo += 1
+            else:
+                print("Podałeś złą liczbę!")
+
+    if wyb == '3':
+        print("Podaj oceny z programowania")
+        print("Wpisz 0, aby przestać wpisywać oceny")
+        while True:
+            print("Podaj ocenę")
+            a = input()
+            a = int(a)
+
+            if a == 0:
+                break
+
+            if a >= 2 and a <= 5:
+                sumaProg += a
+                przedmioty += 1
+                prog += 1
+            else:
+                print("Podałeś złą liczbę!")
+    if wyb == '4':
+        break
+
+print("Z czego policzyć średnią?")
+print("1.Wszystkich przemiotów")
+print("2.Matmy")
+print("3.Algorytmów")
+print("4.Programowania")
+print("5.Zestawienie ocen")
+
+wyb = input()
+
+if wyb == '1' and przedmioty != 0:
+    print("Twoja średnia ocen z wszystkich przedmiotów ", (sumaMatma + sumaAlgo + sumaProg) / przedmioty)
+elif wyb == '2' and matma != 0:
+    print("Twoja średnia ocen z matmy ", sumaMatma / matma)
+elif wyb == '3' and algo != 0:
+    print("Twoja średnia ocen z algorytmów ", sumaAlgo / algo)
+elif wyb == '4' and prog != 0:
+    print("Twoja średnia ocen z programowania ", sumaProg / prog)
+elif wyb == '5':
+    if przedmioty != 0:
+        print("Twoja średnia ocen z wszystkich przedmiotów ", (sumaMatma + sumaAlgo + sumaProg) / przedmioty)
+    if matma != 0:
+        print("Twoja średnia ocen z matmy ", sumaMatma / matma)
+    if algo != 0:
+        print("Twoja średnia ocen z algorytmów ", sumaAlgo / algo)
+    if prog != 0:
+        print("Twoja średnia ocen z programowania ", sumaProg / prog)
+```
+
+# Zadanie 3 - Modyfikacja
+```python
+#print("Podaj ilosc gwiazdek w podstawie")
+#a = input()
+#a = int(a)
+print("Podaj nieparzysty tekst")
+tekst = input()
+a = len(tekst)
+while a % 2 == 0:
+    print("Podałeś parzysty tekst! Podaj ponownie")
+    tekst = input()
+    a = len(tekst)
+
+for i in range(a * 2):
+
+    for j in range (a * 2 - 1):
+        if i == 0 or i - j == 0 and i < a or i + j == a * 2 - 2 and i < a:
+            print("*", end="")
+        elif i == 1 and j == a - 1:
+            print(tekst, end="")
+        elif i == 1 and j > 1 and j < a + 2:
+            print("", end="")
+        else:
+            print(" ", end="")
+
+    print(" ")
+```
