@@ -49,3 +49,13 @@ print(f"Średnia wynosi {sr}")
 print(f"Wartość na podanej pozycji to: {poz}")
 
 ```
+# Zadanie 2
+```py
+import random
+
+with open("Imiona.txt", "r", encoding="utf8") as file:
+    text = file.read()
+    word = list(map(str, text.split()))
+
+print(random.choice(word))
+```
