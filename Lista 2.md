@@ -58,4 +58,16 @@ with open("Imiona.txt", "r", encoding="utf8") as file:
     word = list(map(str, text.split()))
 
 print(random.choice(word))
+
+with open("Nazwiska.txt", "r", encoding="utf8") as file:
+    text = file.read()
+    word = list(map(str, text.split()))
+
+print(random.choice(word))
+
+with open("Ulice.txt", "r", encoding="utf8") as file:
+    text = file.read()
+    word = list(map(str, text.split()))
+
+print(random.choice(word))
 ```
