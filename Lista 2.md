@@ -121,7 +121,8 @@ for i in range(wyb):
     losowanie()
 ```
 # Zadanie 3
-```pyimport random
+```py
+import random
 
 class TMacierz():
     def __init__(self, n, m):
