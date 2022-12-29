@@ -32,7 +32,7 @@ while True:
         except:
             print("Podałeś nazwę, która nie istnieje!")
 
-    else:
+    elif wyb == '2':
         URLTOMORROW = "https://api.openweathermap.org/data/2.5/forecast?"
         urlTomorrow = URLTOMORROW + "appid=" + API + "&q=" + CITY + "&units=" + UNITS + "&lang=" + LANG
         responseTomorrow = requests.get(urlTomorrow).json()
@@ -48,4 +48,8 @@ while True:
             break
         except:
             print("Podałeś nazwę, która nie istnieje!")
+
+    else:
+        print("Nie ma takiej opcji!")
+        pass
 ```
